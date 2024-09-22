@@ -1,0 +1,258 @@
+.main_4 {
+    background-color: rgb(0, 0, 0);
+    width: 100%;
+    min-height: 100vh;
+}
+.main4_top {
+    width: 100%;
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 25px;
+
+}
+.top4_bottom {
+    display: flex;
+justify-content: space-between;
+align-items: center;
+flex-wrap: wrap;
+ width: 100%;
+ padding: 5px 20px;
+    /* background-color: aqua; */
+    /* flex-direction: column; */
+
+}
+
+
+
+.top4_text {
+    width: fit-content;
+    /* background-color: green; */
+
+    position: relative;
+}
+
+.top4_base {
+    font-family: "Teko", sans-serif;
+    font-size: 26px;
+    width: 100%;
+    color: rgba(165, 164, 164, 0.541);
+}
+
+.top4_upper {
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: rgb(255, 255, 255);
+    width: 0%;
+    z-index: 4;
+    text-wrap: nowrap;
+    overflow: hidden;
+    font-family: "Teko", sans-serif;
+    font-size: 26px;
+}
+
+
+.top4_right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+.top4_right h4 {
+    font-family: "Teko", sans-serif;
+    font-size: 18px;
+}
+
+.top4_right i {
+    font-size: 30px;
+}
+
+
+.top4_child {
+    width: 250px;
+    height: 350px;
+    border: 2px solid white;
+    margin: 10px 0px;
+    /* background-color: blueviolet; */
+    background-image: url(../assets/avatar-3.png);
+    filter: grayscale(80%);
+
+    position: relative;
+    z-index: 0;
+    overflow: hidden;
+
+}
+
+
+
+.upper_layer {
+    position: absolute;
+    top: 0;
+    left: 270px;
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    padding: 5px 10px;
+}
+.top4_circle{
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: brown;
+    width: 100px;
+    height: 100px;
+    z-index: 0;
+    border-radius: 50%;
+    scale: 0;
+    opacity: 0;
+
+}
+
+.layer_text {
+    width: 100%;
+    position: relative;
+    color: brown;
+}
+
+.base_layer {
+    color: rgba(110, 96, 96, 0.541);
+    width: fit-content;
+}
+
+.top_layer {
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: rgb(0, 0, 0);
+    z-index: 1;
+    text-wrap: nowrap;
+    overflow: hidden;
+    width: 0%;
+
+}
+
+
+
+
+.base_para {
+    color: rgba(110, 96, 96, 0.541);
+    width: fit-content;
+    display: block;
+    text-align: right;
+    font-family: "Teko", sans-serif;
+    position: relative;
+    z-index: 1;
+}
+
+.base_child{
+    text-align: right;
+    width: 100%;
+    color: rgba(95, 95, 95, 0.562);
+    /* background-color: yellow; */
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    gap: 10px;
+    flex-direction: column;
+
+
+}
+
+.base_child i{
+   width: 50%;
+
+}
+.parent_design {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    background-color: rgb(0, 0, 0);
+    width: 100%;
+    padding: 5px 0px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+
+}
+
+.parent_design::before{
+    content: "/My Eyes Always On Your Reviews/";
+    position: absolute;
+    top: -25px;
+    left: 10px;
+    color: rgb(0, 0, 0);
+    font-family: "Teko", sans-serif;
+    font-size: 16px;
+}
+
+.childs {
+    background-color: rgb(255, 255, 255);
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: eyes;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-delay: 1s;
+
+}
+
+.small_child {
+    background-color: rgb(0, 0, 0);
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+
+
+
+}
+
+@keyframes eyes {
+    0% {
+        display: flex;
+        /* justify-content: left; */
+        align-items: start;
+    }
+
+    100% {
+        display: flex;
+        /* justify-content: right; */
+        align-items: center;
+    }
+}
+
+
+.parent_head{
+    /* background-color: red; */
+    position: relative;
+    width: 100%;
+}
+
+.child_back{
+width: fit-content;
+/* text-align: right; */
+color: rgba(134, 135, 136, 0.534);
+font-size: 12px;
+
+padding-top: 13px;
+}
+
+.child_top{
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: rgb(0, 0, 0);
+    width: 0%;
+    text-wrap: nowrap;
+    overflow: hidden;
+    font-size: 12px;
+    padding-top: 13px;
+}
